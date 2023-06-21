@@ -1,1 +1,40 @@
-<a href="tel:13312345678">点击联系XXX车场管理人员</a>
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>拨打电话</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .button {
+      padding: 20px 40px;
+      background-color: #007bff;
+      color: #fff;
+      font-size: 24px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <a class="button" href="tel:电话号码">拨打电话</a>
+  
+  <script>
+    var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+    if (isMobile) {
+      var button = document.querySelector('.button');
+      button.addEventListener('click', function() {
+        window.location.href = 'tel:15091527718';
+      });
+    }
+  </script>
+</body>
+</html>
